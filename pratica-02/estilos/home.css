@@ -31,9 +31,9 @@ body {
 }
 
 header {
-    background-image: linear-gradient(var(--cor1), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     margin: auto;
-    padding: 40px;
+    min-height: 150px;
 }
 
 header h1 {
@@ -41,10 +41,35 @@ header h1 {
     font-family: var(--titulo);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.633);
     font-size: 2.55em;
-    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
+nav {
+    text-align: center;
+    margin: -15px;
+    font-family: var(--subtitulo);
+    font-size: .9em;
+    padding: 10px;
+    box-sizing: 0px 7px 7px rgba(0, 0, 0, 0.474);
+}
 
+nav > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+nav > a:hover {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+}
 
 main h2 {
     font-family: var(--subtitulo);
