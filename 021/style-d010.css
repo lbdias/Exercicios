@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(d010/fontes/idroid.otf);
+    format('opentype');
+}
+
+@font-face {
+    font-family: 'bison';
+    src: url(d010/fontes/Bison-Bold.ttf.eot);
+    format('embedded opentype');
+}
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: rgba(162, 254, 162, 0.855);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(121, 251, 121, 0.697), green);
+}
+
+header > h1 {
+    font-family: 'bison', arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+header > h2 {
+    font-family: 'bison', arial, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+}
+
+header > nav {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+    color: black;
+    box-shadow: 1px 3px 5px black;
+}
+
+main > section {
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#principal > h1 {
+    font-family: 'idroid', arial, sans-serif;
+    font-size: 25px;
+}
+
+.subtitulo {
+    font-family: 'idroid', arial, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgba(166, 247, 166, 0.437), white);
+    padding: 3px;
+}
+
+.paragrafos {
+    text-indent: 40px;
+}
+
+main > section > iframe {
+    background-color: green;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main > section > aside {
+    background-color: rgba(192, 255, 192, 0.779);
+    border-radius: 20px;
+}
+
+main > section > aside > h3 {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+main > section > aside > p {
+    padding: 10px;
+}
+
+.droid-maos {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.listas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.listas ul {
+  list-style: none;  
+  text-align: justify;
+  padding: 5px;
+  text-indent: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    font-weight: lighter;
+    margin: auto;
+    padding: 2px;
+}

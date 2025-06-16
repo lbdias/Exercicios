@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio imagem flexivel</title>
+</head>
+<body>
+    <h1>Agora vamos ver uma mágica</h1>
+    <p>Amplie ou diminua seu navegador para ver a mágica acontecer.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Paisagem grande">
+    </picture>
+</body>
+</html>

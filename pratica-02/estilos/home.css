@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'henny';
+    src: url('../fontes/hennypenny.ttf');
+}
+
+@font-face {
+    font-family: 'redhat';
+    src: url('../fontes/redhat-regular.ttf');
+}
+
+:root {
+    --cor0: #7AEBC8;
+    --cor1: #7AC3EB;
+    --cor2: #7AE7EB;
+    --cor3: #546A6B;
+    --titulo: 'henny', sans-serif;
+    --subtitulo: 'redhat', sans-serif;
+    --texto: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(var(--cor1), var(--cor3));
+    margin: auto;
+    padding: 40px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--titulo);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.633);
+    font-size: 2.55em;
+    margin-bottom: 40px;
+}
+
+
+
+main h2 {
+    font-family: var(--subtitulo);
+}

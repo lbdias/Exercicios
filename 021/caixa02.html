@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+        }
+        header {
+            background-color: rgba(245, 222, 179, 0.750);
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px; /*podemos escrever os 4 valores individuais, ou dois valores sendo o primeiro esquerda superior e direita inferior e o segundo esquerda inferior e direita superior. Podemos tbm deixar em circulo colocando a porcentagem em 50 (claro sendo tamanhos que permitam, como 100 por 100, por exemplo o qual está agora de 6, teria que ser uns 200px para deixar em circulo) */
+        }
+        h1 {
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(251, 200, 182, 0.363);
+            margin: 0px;
+            text-align: center;
+            box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.666);
+        }
+        nav > a {
+            color: black;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: auto;
+        }
+        footer > p {
+            font-size: 0.7em;
+            margin: 2px;
+        }
+        #noticias {
+            background-color: rgba(250, 235, 215, 0.4);
+        }
+        #noticias > article > h2 {
+            text-align: center;
+        }
+        #noticias > article > p {
+            text-align: justify;
+        }
+        #noticias > aside > p {
+            text-align: right;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Universo</h1>
+        <nav>
+            <a href="@">Noticias Internacionais</a>
+            <a href="@">Comédia Pura</a>
+            <a href="@">Fofocas</a>
+            <a href="@">WTF?</a>
+            <a href="@">Shows</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit at quaerat, explicabo magni, perspiciatis facilis distinctio ipsa ullam, asperiores veniam ratione adipisci maxime eos iure ipsum totam unde deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error, aut veritatis cum autem quibusdam iusto adipisci temporibus nesciunt obcaecati sed illo omnis maxime tempora exercitationem minima expedita! Inventore, nihil. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fuga voluptates! Dolores quos, minima officia incidunt labore ducimus ratione fugiat tempora dolorem dicta suscipit repudiandae esse velit in excepturi perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur omnis, hic quis magni officiis dolor molestias, error asperiores mollitia quibusdam minima minus deserunt voluptate possimus consequatur? Sunt, eligendi obcaecati.</p>
+            </article>
+            <aside>
+                <p>Artigo escrito por Fulano de Tal</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Leticia Dias</p>
+    </footer>
+</body>
+</html>
