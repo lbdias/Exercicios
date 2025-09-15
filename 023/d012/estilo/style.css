@@ -60,7 +60,7 @@ a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 1.4em;
+    line-height: 1.5em;
     padding-left: 30px;
 }
 
@@ -72,23 +72,36 @@ section.normal {
 section.normal > pre {
     font-family: var(--font2);
     font-size: 1.5em;
-    line-height: 1.05em;
+    line-height: 1.07em;
 }
 
 section.imagem{
     background-color: rgba(44, 42, 42, 0.512);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.436);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > pre {
-    width: 400px;
+    width: 250px;
     padding-top: 5px;
     padding-left: 3px;
     padding-bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.614);
+    background-color: rgba(0, 0, 0, 0.304);
     font-family: var(--font3);
     font-size: 1.5em;
     line-height: 1.05em;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
@@ -96,6 +109,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--font3);
+    font-size: 1.2em;
+    word-spacing: 0.1em;
 }
-
-/* Lembrete: checar tamanho da fonte no celular*/
